@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>muskan Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+  
+<link rel="stylesheet" href="style.css">   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color:rgb(18, 18, 44);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+        }
+        
+    
+        nav ul li a {
+            list-style: none;
+            margin: 0 23px;
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(104, 104, 172);
+            font-size: 1.1rem;
+        }
+        main hr{
+            border: 0;
+            background-color: rgb(89, 89, 199);
+            height: 1.2px;
+            margin: 40px 84px;
+
+
+        }
+          
+        .left{
+            font-size: 1.5rem;
+        }
+    .firstsection{
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0px;
+        align-items: center;
+    }
+    .firstsection >div{
+        width: 40%;
+        margin-top: -21px;
+        
+    }
+    .leftsection{
+        width: 50px;
+        margin: 20px 0;
+        font-size: 3rem;
+        margin-left: 48px;
+    }
+    .leftsection .button{
+        padding: 50px 0px;
+    }
+
+    .leftsection .btn{
+        padding: 9px;
+        background-color: rgb(10, 10, 37);
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .leftsection .btn2{
+        padding: 9px;
+        background-color: rgb(10, 10, 37);
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .rightsection{
+        width: 50px;
+        
+    }
+    .rightsection img{
+        height: 95%;
+    width: 90%;
+    }
+    .purple{
+        color: blueviolet;
+    }
+    .text-gray{
+        color: gray;
+
+    }
+    #element{
+        color: blueviolet;  
+    }
+    .secondsection{
+        max-width: 80vw;
+        margin: auto;
+    }
+    .secondsection h1{
+        font-size: 1.9rem;
+    }
+    .secondsection .box{
+        background:white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+    }
+
+  
+    
+
+   
+    
+    
+    </style>
+    <script src="https://kit.fontawesome.com/1ddb7cd032.js" crossorigin="anonymous"></script>
+     
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Muskan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href ="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Muskan</span>
+             and i am a Passionate<br>
+             <span id="element"></span>  <div class="buttons">
+               
+                <button class="btn2">visit github</button>
+                
+             </div>
+            </div>
+
+           
+            </div>
+
+                <div class="rightsection">
+                    <img src="dev.png">
+                </div>
+            </div>
+        </section>
+        <hr>
+       
+       
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="dev2.png">
+
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos quos numquam, consectetur, enim id excepturi minima doloribus illo eligendi,
+                         debitis repellendus sed aspernatur deleniti. Sequi, reiciendis. Ullam, quis iusto.</p>
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                          
+                         </div>
+                         <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app development</li>
+                                <li><span>UI/UX Development</span><br> Designing web interfaces</li>
+                                <li><span>Data Analyst</span><br> Anaylsing data </li>
+                            
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>MCA</span>guru gobind singh indraprastha university<br></li>
+                                <li><span>BCA</span><br> guru gobind singh indraprastha university</li>
+                                <li><span>java coarse</span><br> udemy</li>
+                                <li><span>data science coarse</span><br>udemy</li>
+                                
+                        
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>august 2023-current</span><br>Internship at Bharat intern </li>
+                                
+                            
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!----------------Services-------------->
+     <div id="services">
+        <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+         <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">Learn more</a>
+    
+         </div> 
+         <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">Learn more</a>
+    
+         </div> 
+         <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>data analyst</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">Learn more</a>
+    
+         </div> 
+        </div>
+        </div>
+     </div>
+     <!----------Portfolio------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>  
+        <div class="work-list">
+            <div class="work">
+                <img src="Picture1.png">
+                <div class="layer">
+                    <h3>Gym Website</h3>
+                    <p>This website helps you get fit even at your home.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pic2.png">
+                <div class="layer">
+                    <h3>Tousrism Website</h3>
+                    <p>This website books holiday packages without any hassle at affordable prices. </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pic3.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>This website a unique way to showcase my work and let others know about myself.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="firstsection">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i>9711573869</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="C:\Users\Muskiii\Documents\muskan kakkar resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="id" placeholder="your email"required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+            
+            
+        
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['developer.', 'data analyst.','Explorer.'],
+          typeSpeed: 50,
+        });
+       
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){      
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");                     
+        }
+        
+      </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxPu5DQ5ll5yZUh4EuLR0eJVol6F-DpmXWEJUx-nwwwokA5aWayOK675CouZkEhFOv1/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+      
+        
+      
+</body>
+</html>                     
